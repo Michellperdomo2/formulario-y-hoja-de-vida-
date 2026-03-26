@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Formulario de Inscripción</title>
+
+</head>
+
+<body>
+<center>
+<h2>Formulario de Inscripción</h2>
+</center>
+<center>
+<img src="formulario1.jpg" width="300">
+</center>
+<form>
+
+<table border="1" align="center" >
+
+<tr>
+<th>Nombres</th>
+<td><input type="text" minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required></td>
+</tr>
+
+<tr>
+<th>Primer Apellido</th>
+<td><input type="text" minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required></td>
+</tr>
+
+<tr>
+<th>Segundo Apellido</th>
+<td><input type="text" minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required></td>
+</tr>
+
+<tr>
+<th>Ciudad</th>
+<td>
+<select required>
+<option value="">Seleccione</option>
+<option>Bogotá</option>
+<option>Cartagena</option>
+<option>Medellín</option>
+<option>Cali</option>
+<option>Barranquilla</option>
+<option>Bucaramanga</option>
+<option>Santa Marta</option>
+<option>Ibagué</option>
+<option>Neiva</option>
+<option>Tunja</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<th>Dirección</th>
+<td><input type="text" placeholder="manzana, calle/carrera" required></td>
+</tr>
+
+<tr>
+<th>Tipo de Documento</th>
+<td>
+<select required>
+<option value="">Seleccione</option>
+<option>Cédula</option>
+<option>Tarjeta de identidad</option>
+<option>Cédula de extranjería</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<th>Número de Documento</th>
+<td><input type="text" pattern="[0-9]{5,15}" placeholder="Solo números" required></td>
+</tr>
+
+<tr>
+<th>Teléfono fijo</th>
+<td><input type="tel" pattern="[0-9]{10}" placeholder="10 dígitos"></td>
+</tr>
+
+<tr>
+<th>Teléfono celular</th>
+<td><input type="tel" pattern="[0-9]{10}" placeholder="10 dígitos" required></td>
+</tr>
+
+<tr>
+<th>Correo electrónico</th>
+<td><input type="email" placeholder="ej.pepito2@gmail" required></td>
+</tr>
+
+<tr>
+<th>Usuario</th>
+<td><input type="text" minlength="3" maxlength="16" placeholder="Ej: Usuario12" required></td>
+</tr>
+
+<tr>
+<th>Password</th>
+<td><input type="password" maxlength="16" placeholder="16 caracteres" required></td>
+</tr>
+
+<tr>
+<th>Fecha de inscripción</th>
+<td><input type="date" min="2026-02-15" max="2026-03-06" required></td>
+</tr>
+
+<tr>
+<th>Intereses</th>
+<td>
+<input type="checkbox"> Descansar<br>
+<input type="checkbox"> Deportes<br>
+<input type="checkbox"> Música<br>
+<input type="checkbox"> Videojuegos<br>
+<input type="checkbox"> Viajar<br>
+Otros: <input type="text">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
